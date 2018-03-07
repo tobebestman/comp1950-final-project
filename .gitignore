@@ -1,1 +1,4 @@
+
+#ignore the content under these folders.
 styles/
+.sass-cache/
