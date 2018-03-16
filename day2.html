@@ -40,6 +40,35 @@
                 </ul>
             </section>
             <section>
+                <h2>Character Sets And Languages</h2>
+                <p>The W3C recommends the <a href="https://www.w3.org/International/questions/qa-choosing-encodings">UTF-8 charset</a> for web development. It includes an impressive array of languages and special characters, and is well supported in common devices.</p>
+
+                <h2>Assign Character Set</h2>
+                <p>
+                    If it is not specified, a web browser will choose the character set it thinks is most appropriate, but it is a better practice for the developer to ensure the correct character set by applying the meta tag to the head section of every HTML page:
+                    <code>&lt;meta charset="utf-8" /&gt;</code>
+                </p>
+                <ul>
+                    <li>Write all your text-based code (.html, .css, .js, .php, etc) in UTF-8. At development time, ensure your text editor is saving files in this format. This setting is usually found in the application's Preferences menu option.</li>
+                    <li>Unless your audience includes very old browsers, you can <a href="https://tools.oratory.com/altcodes.html">code special characters</a> directly into the HTML (you dont need to use HTML entities for most special characters).</li>
+                    <li>You cannot copy-paste rich text (such as Microsoft Word, or WordPad) into your HTML. The rich text formatting may result in an unreadable mess.</li>
+                    <li>An HTTP server can over-ride your charset preferences when it generates the HTTP header. Details on how to control this will be discussed later in this course.</li>
+                </ul>
+                <h2>HTML lang Attribute</h2>
+                <p>Use the lang="" attribute to <a href="https://www.w3.org/International/questions/qa-html-language-declarations">declare the language in HTML</a>. This is usually applied to the html element. Assigning the appropriate language code will apply to all contained content, unless over-ridden with another lang="".</p>
+                <p>Use the language abbreviations from the <a href="www.loc.gov/standards/iso639-2/php/code_list.php">standard ISO 639-1</a> code set (don't use ISO 639-2).</p>
+                <h3>HTML</h3>
+                <p>What started as a language defined by <a href="www.w3.org/MarkUp/SGML/">SGML</a> (Standard Generalized Markup Language), HTML is used to mark up billions of pages, making up the bulk of the web.</p>
+                <ul>
+                    <li>Late 1991, Tim Berners-Lee releases the first iteration of what would become HTML 2.0 (there was no real 1.0+)</li>
+                    <li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
+                    <li>Over the next decade, various additions, improvements and changes are introduced</li>
+                    <li><a href="https://www.w3.org/TR/1999/REC-html401-19991224/">HTML 4.01</a> released in December 1999</li>
+                    <li>Initially used for documents and a place for the technically inclined, the web did not have the international pervasiveness it does today</li>
+                    <li>Most developers were new to the language and there were no real classes in it</li>
+                    <li>People had to learn as they went along</li>
+                    <li>A lot of early sites are poorly designed</li>
+                </ul>
 
             </section>
         </article>
