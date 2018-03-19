@@ -69,6 +69,165 @@
                     <li>People had to learn as they went along</li>
                     <li>A lot of early sites are poorly designed</li>
                 </ul>
+                <h3>
+                    <H3>HTML 4.01 template</H3>
+                </h3>
+                <p>The problem with the state of HTML then was its reputation as a loose language. Poorly structured code would be rendered differently across user agents, leading to forked code and less predictable results.</p>
+
+                <h3> XHTML</h3>
+                <p>The <a href="https://www.w3.org/TR/2002/REC-xhtml1-20020801/">XHTML specification</a> was the result of rewriting <a href="https://www.w3.org/TR/1999/REC-html401-19991224/">HTML</a> 4.01 using the ruleset derived from<a href="https://www.w3.org/XML/"> XML</a></p>
+                <ul>
+                    <li>HTML 4.01 + XML = XHTML 1.0</li>
+                    <li>X = eXtensible</li>
+                    <li>X = XML related</li>
+                    <li>Better, more predictable coding patterns.</li>
+                    <li>Verifiable or "well-formed" code can be produced.</li>
+                    <li>Forces a higher standard of HTML.</li>
+                    <li>Predictable behavior across user agents.</li>
+                    <li>Porting to HTML5 is easy (if you also observe semantic guidelines).</li>
+                </ul>
+
+                <h3>XHTML Rules:</h3>
+                <ul>
+
+                </ul>
+                <ul>
+                    <li>All elements must be properly nested</li>
+                    <ul>
+                        <li>
+                            This is not valid: <code>&lt;p&gt;&lt;b&gt;Bolded Text&lt;/p&gt;&lt;/b&gt;</code>
+                        </li>
+                        <li>This can be a problem with things like Lists <code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code>.</li>
+                        <li>Especially when closing the List Item <code>&lt;li&gt;</code> tag that contains the <code>&lt;ul&gt;</code> or <code>&lt;ol&gt; </code>tag.</li>
+                    </ul>
+                    <li>All tags must close </li>
+                    <ul>
+                        <li>
+                            Example: <code>&lt;p&gt;Some text here&lt;/p&gt;</code>
+                        </li>
+                        <li>
+                            Empty Elements are closed as well: <code>&lt;br /&gt;</code> or <code>&lt;img src=&quot;#&quot; /&gt;
+</code>
+                        </li>
+                        <li>An extra space is required before the slash to work with all browsers.</li>
+                    </ul>
+                    <li>All tag names must be in lower case</li>
+                    <ul>
+                        <li><code>&lt;Img Src=&quot;some_image.gif&quot;&gt;</code> is not valid</li>
+                    </ul>
+
+                    <li>Attribute names are always in lower case</li>
+                    <ul>
+                        <li><code>&lt;p ALIGN=&quot;center&quot;&gt;&nbsp;</code>should be<code>&nbsp;&lt;p align=&quot;center&quot;&gt;</code></li>
+                    </ul>
+                    <li>All attributes must be quoted</li>
+
+                    <ul>
+                        <li><code>&lt;body bgcolor=black&gt;&nbsp;</code>will not work, you need:<code>&nbsp;&lt;body bgcolor=&quot;black&quot;&gt;</code></li>
+                    </ul>
+                    <li>Attributes cannot be minimized</li>
+                    <ul>
+                        <li><code>&lt;input type=&quot;checkbox&quot; checked&gt;&nbsp;</code>cannot be used. The valid code is:<code>&nbsp;&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; /&gt;</code></li>
+                    </ul>
+                    <li>Name Attribute is no longer used (except with forms). Replace "name" with "id".</li>
+                    <ul>
+                        <li><code>&lt;img src=&quot;picture.gif&quot; name=&quot;myimage&quot; /&gt;&nbsp;</code>will not validate. Use<code>&nbsp;id=&quot;myimage&quot;&nbsp;</code>instead.</li>
+                    </ul>
+                    <li>Mandatory Elements: Every XHTML document must have these elements:</li>
+                    <ul>
+                        <li>
+                            <code>            &lt;html&gt;</code>
+                        </li>
+                        <li>
+                            <code>            &lt;head&gt;</code>
+                        </li>
+                        <li>
+                            <code>            &lt;title&gt;</code>
+                        </li>
+                        <li>
+                            <code>            &lt;body&gt;</code></li>
+                        <li>
+                            <code>The &lt;!DOCTYPE&gt;</code> declaration must be there, but it is part of the document itself rather than an element of the document.</li>
+                    </ul>
+                    <li>Documents must be well-formed</li>
+                    <ul>
+                        <li>The document must conform to all of the above rules</li>
+                    </ul>
+                    <li>Optional XML declaration</li>
+                    <ul>
+                        <li>Not required, but good practice:</li>
+                        <li><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;</code></li>
+                    </ul>
+                    <li>
+                        Optional Element: An XHTML document should also declare the type and character encoding in the head section to ensure the server sends the correct content-type header:
+                        <ul>
+                            <li>
+                                <code>&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html&quot; charset=&quot;UTF-8&quot;&gt;</code>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>XHTML 1.0 template</h3>
+                <h3>HTML5</h3>
+                <p>As of October 28, 2014, <a href="www.w3.org/TR/html5/">HTML5 is the official W3C recommendation</a> HTML5 is more evolutionary then revolutionary. The bulk of previous HTML elements and attributes are maintained, with a few deprecations, and several additions. Significant features include:</p>
+                <ul>
+                    <li>Ultra simple Doctype: <code>&lt;!DOCTYPE html&gt;</code></li>
+                    <li>Specifies how browsers should behave with imperfect code</li>
+                    <li>Ability to embed <a href="https://www.w3.org/XML/">XML</a>, <a href="www.w3.org/Math/">MathML</a> or <a href="www.w3.org/Graphics/SVG/">SVG</a> markup.</li>
+                    <li>Standardized Javascript API increases client side script compatibility across browsers</li>
+                    <li>Backwards compatible - older versions of HTML can effectively be updated by simply changing the doctype to HTML5</li>
+                    <li>Guiding principles: Enhance semantic coding, Support existing content, Pave the cowpaths</li>
+                </ul>
+                <h3>HTML 5 template</h3>
+                <h3>Paving the Cowpaths</h3>
+                <p>Common developer practices have been simplified</p>
+                <ul>
+                    <li>Finally a DOCTYPE we can all remember:<code>&lt;!DOCTYPE html&gt;</code></li>
+                    <li>
+                        Declaring the character encoding is easier:<code>&lt;meta charset="utf-8"&gt;</code>
+                    </li>
+                    <li>
+                        When linking to external stylesheets the type attribute is not required:<code>&lt;link rel="stylesheet" href="style.css" /&gt;</code>
+                    </li>
+                    <li>
+                        When embedding CSS the type attribute is not required:<code>&lt;style&gt;&lt;/style&gt;</code>
+                    </li>
+                    <li>
+                        Including javascripts is simplified as well (type attribute is not required)<code>&lt;script src="javascripts.js"&gt;&lt;/script&gt;</code>
+                    </li>
+                </ul>
+
+                <h3> HTML5: Enhanced Semantic Coding</h3>
+                <p>It is crucial for all HTML content to be semantically marked up. This is how browsers, search engines, and screen readers make sense of online content. HTML5 provides more than just adjustments to the markup, there are new, powerfully semantic elements:</p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"><code>&lt;section&gt;</code></a> is a tag representing a document or application section. in general, if you are planning to use a heading, start a new section. a section must contain a heading, and may contain article(s), possibly asides or even sub-sections</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"><code>&lt;article&gt;</code></a> is an independent piece of content in a document (it could stand alone if removed from the page). an article might be a blog post, forum thread, news story, collection of product information, etc</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside"><code>&lt;aside&gt;</code></a> is for content "only slightly" related to the main page content. asides fill the role of a sidebar. if the content could be removed without reducing the meaning of the main content of the HTML document, then use an aside</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header"><code>&lt;header&gt;</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer"><code>&lt;footer&gt;</code></a> are for the header or footer of a page</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"><code>&lt;nav&gt;</code></a> represents an area for navigation</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main"><code>&lt;main&gt;</code></a> used for containing content that is focused on the central topic of the page. this content is usually unique to the page, and not shared by other pages (main will usually NOT contain navigations, footers, sidebars, etc)</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"><code>&lt;figure&gt;</code> </a>will likely contain an img or graphic. self-contained content (could usually be removed from the page and stand on its own). allows for captioning of embedded content like an image graphic or video. if you want to associate a caption, add a figcaption child</li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"><code>&lt;figcaption&gt;</code></a> used as first or last child of figure to define the caption or legend for a figure</li>
+                </ul>
+                <p>These represent some big changes in HTML, allowing for more flexibility in coding and specifying content. Many of these will replace and reduce the need for many div tags. eg: instead of the typical
+                    <code>&lt;div id="header"&gt;</code>, use
+                    <code>&lt;heade&gt;</code>.
+                    <br />Having trouble deciding which tag to use for what content? Try this <a href="html5doctor.com/downloads/h5d-sectioning-flowchart.pdf">HTML5 flowchart</a>.
+                </p>
+                <h3>HTML5 Semantic Alterations </h3>
+                <p>HTML5 also brings a few notable semantic alterations to older tags: </p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a> though still an inline tag, it is now ok to nest multiple block level tags (headings, paragraphs etc) inside an anchor tag</li>
+                    <li><a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/small"><code>&lt;small&gt;</code></a> no longer a 'physical' tag for smaller sized print, it now has semantic value: meaning 'small print', i.e. 'legalese'. the big element has been deprecated</li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b"><code>&lt;b&gt;</code></a> no longer means 'render bold'. now it means the text is 'stylisticly offset from the normal text', without conveying any extra importance. to convey extra importance, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong"><code>&lt;strong&gt;</code></a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i"><code>&lt;i&gt;</code></a> now means the text is 'in an alternate voice or mood', without conveying any extra emphasis. to convey extra emphasis, use <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em"><code>&lt;em&gt;</code></a>
+                    </li>
+                    <li>Deprecated tags: <strong><code>&lt;big&gt;</code>, <code>&lt;font&gt;</code>, <code>&lt;strike&gt;</code></strong>, and a few more. Developers should use CSS instead of these deprecated tags.</li>
+                    <li>Deprecated attributes: <strong>align, bgcolor, border, height, size, type, width</strong> and more. Developers should use CSS instead of these deprecated attributes.</li>
+                </ul>
 
             </section>
         </article>
