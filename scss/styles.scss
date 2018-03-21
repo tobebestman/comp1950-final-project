@@ -1,1 +1,17 @@
 //this is the main scss file for the site.
+/*
+    main sass file for the COMP1950 Final project.
+*/
+
+@charset "utf-8";
+
+// Imports
+// Utility Imports
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'placeholders';
+
+// Resets and Defaults
+@import 'reset';
+@import 'typography';
