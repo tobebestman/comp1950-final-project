@@ -1,0 +1,30 @@
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+    padding: $padding-mobile;
+    grid-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+
+
+    @include mq($phonePortrait) {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(6, 10vw);
+        padding: $padding-mobile;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+}
+
+.box {
+    border: 3px solid black;
+    font-size: calc(2vw + 8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
