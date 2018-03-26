@@ -15,9 +15,11 @@
 
     <script>
         $(document).ready(function() {
-            $('.slider').bxSlider();
+            $('.slider').bxSlider({
+                mode: 'fade',
+                captions: true
+            });
         });
-
     </script>
 
 
@@ -57,13 +59,13 @@
             <div class="banner">
                 <div class="slider">
                     <div>
-                        <img src="./images/web-code.jpg" alt="Computer code">
+                        <img src="./images/web-code.jpg" alt="Computer code" title="Learn HTML/CSS/JS">
                     </div>
                     <div>
-                        <img src="./images/computer-on-desk.jpg" alt="Computer on desk">
+                        <img src="./images/computer-on-desk.jpg" alt="Computer on desk" title="Uptodate technical content">
                     </div>
                     <div>
-                        <img src="./images/bcit.jpg" alt="BCIT - Burnaby campus">
+                        <img src="./images/bcit.jpg" alt="BCIT - Burnaby campus" title="BCIT campus">
                     </div>
                 </div>
                 <h1>Web Design<br>and<br>Development 2</h1>

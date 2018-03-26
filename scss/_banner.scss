@@ -1,5 +1,11 @@
 .banner {
     position: relative;
+
+    .slider {
+        @include center(true);
+    }
+
+    width: 80%vw;
     h1 {
         font-size: 4em;
         @include flatten;
