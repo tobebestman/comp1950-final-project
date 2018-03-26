@@ -7,33 +7,109 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BCIT Comp1950</title>
     <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider();
+        });
+    </script>
+
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">home</a>
-                </li>
-                <li>
-                    <a href="./about-the-course.html">about the course</a>
-                </li>
-                <li>
-                    <a href="./schedule.html"> schedule</a>
-                </li>
-                <li>
-                    <a href="./contact-us.html">contact us</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="wrapper">
+        <header>
 
-    </main>
-    <footer>
+            <div class="header-row-01">
+                <a href="./index.html"><img class="logo" src="./images/comp1950_logo.svg"></a>
+                <button class="hamburger">
+                <span class="hamburger-content">
+                    <span class="hamburger-icon" tabindex="-1">&#9776;</span>
+                    <span class="hamburger-text">Menu</span>
+                </span>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="./about-the-course.html">about the course</a>
+                    </li>
+                    <li>
+                        <a href="./schedule.html"> schedule</a>
+                    </li>
+                    <li>
+                        <a href="./contact-us.html">contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="banner">
+                <div class="slider">
+                    <div>
+                        <img src="./images/web-code.jpg" alt="Computer code">
+                    </div>
+                    <div>
+                        <img src="./images/computer-on-desk.jpg" alt="Computer on desk">
+                    </div>
+                    <div>
+                        <img src="./images/bcit.jpg" alt="BCIT - Burnaby campus">
+                    </div>
+                </div>
+                <h1>Web Design<br>and<br>Development 2</h1>
+            </div>
+            <section class="intro">
+                <article class="welcome">
+                    <h1>Welcome</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam enim dolore ea soluta delectus voluptatum ipsam dolorem consectetur reiciendis nihil sint aliquid non quo dolor, ut quae vero atque?</p>
+                    <p>Iste sapiente repellendus amet repudiandae, vel minus unde libero temporibus aliquid voluptatem voluptates modi, dolorum ut a eius, eaque animi tenetur esse illo earum ipsum! Minima ad asperiores hic alias!</p>
+                    <p>Eum fugit quis ut adipisci numquam vero corporis culpa! Debitis blanditiis possimus quae earum accusamus sint velit eligendi corporis non vero molestias ab cupiditate incidunt vitae dolor, numquam doloremque officiis?</p>
+                </article>
+                <article class="more-info">
+                    <h1>More Info</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, minima neque. Sed, illum?</p>
+                    <ul>
+                        <li><a href="#0">About the Course</a></li>
+                        <li><a href="#0">The learning schedule</a></li>
+                        <li><a href="#0">Explore the lessons</a></li>
+                        <li><a href="#0">Contact Us</a></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="./about-the-course.html">about the course</a>
+                    </li>
+                    <li>
+                        <a href="./schedule.html"> schedule</a>
+                    </li>
+                    <li>
+                        <a href="./contact-us.html">contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>
+                &copy;2018 Comp1950 Final Porject. All the image and material are come from internet, and used for education purpose only.</p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    </footer>
+    <script src="./scripts/menu.js"></script>
 </body>
 
 </html>

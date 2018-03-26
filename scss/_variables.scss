@@ -1,5 +1,4 @@
 // Colours
-
 // Site Colours
 $site-black: #0c090d;
 $site-white: white;
@@ -7,21 +6,28 @@ $site-red: #e01a4f;
 $site-orange: #f15946;
 $site-yellow: #f9c22e;
 $site-blue: #53b3cb;
+$site-gray: #f2f2f2;
 
 // Text Colors
 $text-dark: $site-black;
 $text-light: $site-white;
 
 // Fonts
-$body-font: 'Open Sans', sans-serif;
-$heading-font: 'Archivo Black', sans-serif;
+$body-font: 'Open Sans',
+sans-serif;
+$heading-font: 'Archivo Black',
+sans-serif;
 // Typographic Defualts
 $line-height: 1.4;
 
 // Layout variables
-
 // Site Width:
+$header-right:20px;
+$header-height:60px;
+
 $site-width: 1024px;
+$max-site-width: 1920px;
+$min-site-width: 320px;
 
 // Spacing
 $space: 30;
@@ -31,10 +37,8 @@ $padding-mobile: rem(($space - 10));
 $half-padding-mobile: rem((($space - 10) / 2));
 
 // Grid Values
-
 // Column Gutter value
 $gutter: 2; // Roughly equivalent to 2%
-
 $one-col: 100%;
 $two-col: colWidth(2);
 $three-col: colWidth(3);
@@ -54,9 +58,7 @@ $phonePortrait: em(420);
 $hover: '&:hover, &:focus, &:active';
 
 // Aspect Ratios
-$aspect-ratios: (
-    'video': rp(16, 9),
-    'square': rp(1,1),
-    'cinema': rp(21,9),
-    'photo': rp(3,2)
-);
+$aspect-ratios: ( 'video': rp(16, 9),
+'square': rp(1, 1),
+'cinema': rp(21, 9),
+'photo': rp(3, 2));

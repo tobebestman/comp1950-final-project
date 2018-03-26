@@ -1,0 +1,13 @@
+section {
+    padding: $padding;
+
+    article:not(:last-child) {
+        @include first-last-el-no-margin;
+        margin-bottom: $padding;
+    }
+
+    @include mq($phoneLandscape) {
+        padding: $padding-mobile;
+    }
+
+}
