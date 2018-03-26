@@ -1,11 +1,5 @@
 .banner {
-    position: relative;
-    .slideshow {
-        @include aspect-ratio-box('video');
-        img {
-            @include img-cover;
-        }
-    }
+
     h1 {
         font-size: 4em;
         @include flatten;
