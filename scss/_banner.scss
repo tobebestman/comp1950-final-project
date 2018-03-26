@@ -7,16 +7,15 @@
 
     width: 80%vw;
     h1 {
-        font-size: 4em;
+        font-size: 3em;
         @include flatten;
-        @include center(false);
+        @include center(false, false);
         color: $text-light;
         text-align: center;
-        text-shadow: 2px 4px 0 $text-dark,
-        4px 6px 0 $site-orange;
+        text-shadow: 2px 2px 0 $text-dark;
         white-space: nowrap;
         font-family: $body-font;
-        font-weight: 800;
+        font-weight: 600;
     }
 
     @include mq($phoneLarge) {
