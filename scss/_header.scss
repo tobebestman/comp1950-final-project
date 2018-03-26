@@ -1,5 +1,6 @@
 header {
 
+    @include force-uppercase;
     $header-height: 60px !global;
     min-height: $header-height;
 

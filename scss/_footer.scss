@@ -1,4 +1,5 @@
 footer {
+
     background-color: lighten($site-black, 10);
     color: $site-white;
     padding: $padding;
@@ -19,6 +20,9 @@ footer {
     }
 
     nav {
+
+        @include force-uppercase;
+
         ul {
             @include flatten(true);
             display: flex;

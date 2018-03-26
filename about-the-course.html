@@ -8,55 +8,78 @@
 
     <link rel="stylesheet" href="./styles/styles.css">
 
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
+        });
+    </script>
 
     <title>About the course</title>
 
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">home</a>
-                </li>
-                <li>
-                    <a href="./about-the-course.html">about the course</a>
-                </li>
-                <li>
-                    <a href="./schedule.html"> schedule</a>
-                </li>
-                <li>
-                    <a href="./contact-us.html">contact us</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <article>
+    <div class="wrapper">
+        <header>
+            <div class="header-row-01">
+                <a href="./index.html"><img class="logo" src="./images/comp1950_logo.svg"></a>
+                <button class="hamburger">
+                <span class="hamburger-content">
+                    <span class="hamburger-icon" tabindex="-1">&#9776;</span>
+                    <span class="hamburger-text">Menu</span>
+                </span>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="./about-the-course.html">about the course</a>
+                    </li>
+                    <li>
+                        <a href="./schedule.html"> schedule</a>
+                    </li>
+                    <li>
+                        <a href="./contact-us.html">contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
                 <h1>Course Overview</h1>
-                <section>
+
+                <div id="accordion">
                     <h2>Course Description:</h2>
-                    <p>
-                        This hands-on course follows on from COMP 1850 Applied Web Development Level 1. Students who already understand HTML and CSS will explore web development in more depth with new topics and techniques. Participants will gain a deeper understanding of the latest technologies including HTML5 and CSS3 for developing web sites and applications. There is a focus on responsive design and mobile presentation through the use of Media Queries. Adding behavior to web sites using JavaScript frameworks such as jQuery is introduced. Labs and exercises focus on industry standard web development methodology. Students gain experience creating templates for content management systems and presentation. Additional topics will include: source control for managing your code, and web-based fonts for professional typography.
-                    </p>
-                    <p>
-                        By the end of this course successful students will be able to build dynamic and semantically marked-up content that is viewable on mobile and desktop screen sizes.
-                    </p>
-                </section>
-                <section>
+                    <div>
+                        <p>
+                            This hands-on course follows on from COMP 1850 Applied Web Development Level 1. Students who already understand HTML and CSS will explore web development in more depth with new topics and techniques. Participants will gain a deeper understanding of the latest technologies including HTML5 and CSS3 for developing web sites and applications. There is a focus on responsive design and mobile presentation through the use of Media Queries. Adding behavior to web sites using JavaScript frameworks such as jQuery is introduced. Labs and exercises focus on industry standard web development methodology. Students gain experience creating templates for content management systems and presentation. Additional topics will include: source control for managing your code, and web-based fonts for professional typography.
+                        </p>
+                        <p>
+                            By the end of this course successful students will be able to build dynamic and semantically marked-up content that is viewable on mobile and desktop screen sizes.
+                        </p>
+                    </div>
                     <h2>Course Goals:</h2>
-                    <p>
+                    <div>
                         <ul>
                             <li> To gain a deeper understanding of HTML, CSS and advanced topics in web development.</li>
                             <li>To focus on best practices in web page and web site design.</li>
                         </ul>
-                    </p>
-                </section>
-                <section>
+                    </div>
+
                     <h2>Course Learning Outcomes / Competencies:</h2>
-                    <p>
+                    <div>
                         Upon successful completion of this course, the student will be able to:
                         <ul>
                             <li> To focus on best practices in web page and web site design. </li>
@@ -69,14 +92,32 @@
                             <li> Create professional looking typography using web-based fonts. </li>
                             <li> Understand source control using GIT. </li>
                         </ul>
-                    </p>
-                </section>
-            </article>
-        </section>
-    </main>
-    <footer>
+                    </div>
+                </div>
 
-    </footer>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="./about-the-course.html">about the course</a>
+                    </li>
+                    <li>
+                        <a href="./schedule.html"> schedule</a>
+                    </li>
+                    <li>
+                        <a href="./contact-us.html">contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>Comp1950 Final Porject for education only.</p>
+        </footer>
+    </div>
+    <script src="./scripts/menu.js"></script>
 </body>
 
 </html>
