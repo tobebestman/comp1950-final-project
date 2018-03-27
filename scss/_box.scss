@@ -1,7 +1,7 @@
 .schedule {
     display: grid;
-    grid-template-columns: repeat(4, 20vw);
-    grid-template-rows: repeat(3, 20vw);
+    grid-template-columns: repeat(4, minmax(auto, 200px));
+    grid-template-rows: repeat(3, minmax(auto, 200px));
     padding: $padding-mobile;
     grid-gap: 5px;
     justify-items: stretch;
@@ -52,9 +52,13 @@
 
 .box {
     border: 3px solid black;
-    font-size: calc(2vw + 8px);
+    font-size: minmax(calc(2vw + 8px), 60px);
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
+
+    #{$hover} {
+        background-color: rgba($site-yellow, 0.4);
+    }
 }
