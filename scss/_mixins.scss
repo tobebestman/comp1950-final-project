@@ -184,3 +184,11 @@
 @mixin force-uppercase {
     text-transform: uppercase;
 }
+
+@mixin set-background-img($img-name) {
+    $url:"../images/#{$img-name}";
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
