@@ -14,7 +14,7 @@ footer {
         align-items: center;
 
         p {
-            @include flatten;
+            padding: $padding-mobile;
         }
 
     }
@@ -32,7 +32,7 @@ footer {
         a {
             @include plain-link($site-white);
             display: block;
-            padding: 0 20px;
+            padding: 0 $half-padding-mobile;
             border-right: 1px solid $site-white;
             @at-root footer nav li:last-child a {
                 border-right: none;
@@ -42,6 +42,7 @@ footer {
             }
         }
 
+
         @include mq($phoneLandscape) {
             ul {
                 display: block;
@@ -49,7 +50,8 @@ footer {
 
             a {
                 border-right: none;
-                line-height: 2;
+                line-height: 1.4em;
+                padding: $half-padding-mobile;
             }
 
         }
