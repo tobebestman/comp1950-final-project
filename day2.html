@@ -39,19 +39,21 @@
             </nav>
         </header>
         <main>
-            <article>
-                <section>
+            <section>
+                <section class="agenda">
                     <h1>Agenda</h1>
                     <ul>
-                        <li>Charsets</li>
-                        <li>HTML, XHTML, HTML5</li>
-                        <li>Semantics</li>
-                        <li>Forms, SVG, Multimedia</li>
-                        <li>To Do</li>
+                        <li><a href="#charsets">Charsets</a></li>
+                        <li><a href="#html-xhtml-html5">HTML, XHTML, HTML5</a></li>
+                        <li><a href="#semantics">Semantics</a></li>
+                        <li><a href="#form-svg-multimedia">Forms, SVG, Multimedia</a></li>
+                        <li><a href="#to-do">To Do</a></li>
                     </ul>
                 </section>
                 <section>
-                    <h2>Character Sets And Languages</h2>
+                    <button onclick="topFunction()" id="BackToTopButton" title="Go to top">Top</button>
+
+                    <h2 id="charsets">Character Sets And Languages</h2>
                     <p>The W3C recommends the <a href="https://www.w3.org/International/questions/qa-choosing-encodings">UTF-8 charset</a> for web development. It includes an impressive array of languages and special characters, and is well supported in common devices.</p>
 
                     <h2>Assign Character Set</h2>
@@ -65,7 +67,7 @@
                         <li>You cannot copy-paste rich text (such as Microsoft Word, or WordPad) into your HTML. The rich text formatting may result in an unreadable mess.</li>
                         <li>An HTTP server can over-ride your charset preferences when it generates the HTTP header. Details on how to control this will be discussed later in this course.</li>
                     </ul>
-                    <h2>HTML lang Attribute</h2>
+                    <h2 id="html-xhtml-html5">HTML lang Attribute</h2>
                     <p>Use the lang="" attribute to <a href="https://www.w3.org/International/questions/qa-html-language-declarations">declare the language in HTML</a>. This is usually applied to the html element. Assigning the appropriate language code will apply to all contained content, unless over-ridden with another lang="".</p>
                     <p>Use the language abbreviations from the <a href="www.loc.gov/standards/iso639-2/php/code_list.php">standard ISO 639-1</a> code set (don't use ISO 639-2).</p>
                     <h3>HTML</h3>
@@ -99,9 +101,6 @@
                     </ul>
 
                     <h3>XHTML Rules:</h3>
-                    <ul>
-
-                    </ul>
                     <ul>
                         <li>All elements must be properly nested</li>
                         <ul>
@@ -207,7 +206,7 @@
                         </li>
                     </ul>
 
-                    <h3> HTML5: Enhanced Semantic Coding</h3>
+                    <h3 id="semantics"> HTML5: Enhanced Semantic Coding</h3>
                     <p>It is crucial for all HTML content to be semantically marked up. This is how browsers, search engines, and screen readers make sense of online content. HTML5 provides more than just adjustments to the markup, there are new, powerfully semantic elements:</p>
                     <ul>
                         <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"><code>&lt;section&gt;</code></a> is a tag representing a document or application section. in general, if you are planning to use a heading, start a new section. a section must contain a heading, and may contain article(s), possibly asides or even sub-sections</li>
@@ -259,7 +258,7 @@
                     <p>In HTML5, each piece of sectioned content has its own self-contained outline. This means you wont need to worry as much about which level heading tag to use. You can use an <strong>h1</strong> inside a section and it will be treated as the heading of the section, and have lesser semantic impact than an <strong>h1</strong> that is at a higher level.</p>
 
 
-                    <h3>Forms</h3>
+                    <h3 id="form-svg-multimedia">Forms</h3>
                     <p>HTML 5 adds several new <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">form attributes</a> that prove quite useful, even if some are as yet poorly supported.</p>
                     <ul>
                         <li><strong>placeholder="value"</strong>: prepopulates field with data</li>
@@ -372,7 +371,7 @@
                         </li>
                     </ul>
 
-                    <h3>To Do</h3>
+                    <h3 id="to-do">To Do</h3>
                     <ul>
                         <li>Download, review, and complete the homework assignment from <a href="https://learn.bcit.ca/">D2L</a></li>
                         <li>Review the <a href="bcitcomp.ca/1950/lecture/02/#semantics">HTML5 semantic tags</a>, know how and when to use them to maxmize the semantic strucure of your HTML</li>
@@ -380,7 +379,7 @@
 
 
                 </section>
-            </article>
+                </article>
         </main>
         <footer>
             <nav>
