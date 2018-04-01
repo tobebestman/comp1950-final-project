@@ -1,5 +1,5 @@
 .schedule-main {
-    @include set-background-img('schedule.jpg');
+    @include set-background-img('schedule-compressed.jpg');
 
     @include mq($phonePortrait) {
         @include set-background-img('schedule-small.jpg')

@@ -44,10 +44,28 @@
         </header>
         <main>
             <section class="contact-section">
-                <form action="contact-result.html" target="_blank" method="post">
-                    First name:<br />
-                    <input type="text" name="firstname" value="Mike"><br />
-                    <input type="submit" value="submit">
+                <form action="contact-result.php" target="_blank" method="post">
+                    <div class="data-section">
+                        <label for="first-name">first name:</label>
+                        <input placeholder="Please input first name" type="text" name="first-name" value="" required><br />
+                    </div>
+                    <div class="data-section">
+                        <label for="last-name">Please input last name:</label>
+                        <input placeholder="last name" type="text" name="last-name" value="" required><br />
+                    </div>
+                    <div class="data-section">
+                        <label for="last-name">email:</label>
+                        <input placeholder="Please input email address" type="email" name="last-name" value="" reauired><br />
+                    </div>
+                    <div class="data-section">
+                        <label for="comments">comments:</label>
+                        <textarea placeholder="Please input comments" name="comments"></textarea>
+                    </div>
+
+                    <div class="command-section">
+                        <input type="reset">
+                        <input type="submit" value="submit">
+                    </div>
                 </form>
             </section>
         </main>
