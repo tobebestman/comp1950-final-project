@@ -9,5 +9,11 @@ section {
     @include mq($phoneLandscape) {
         padding: $padding-mobile;
     }
+}
 
+
+.code-p {
+    padding: 10px;
+    background-color: rgba($site-blue, 0.1);
+    border: 1px dashed $site-black;
 }
