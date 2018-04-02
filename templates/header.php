@@ -25,7 +25,7 @@ if (!isset($pageName)) {
         <div class="wrapper">
             <header>
                 <div class="header-row-01">
-                    <a href="./index.html"><img class="logo" src="./images/comp1950_logo.svg"></a>
+                    <a href="./index.html"><img class="logo" src="./images/comp1950_logo.svg" alt="course-logo"></a>
                     <button class="hamburger">
                 <span class="hamburger-content">
                     <span class="hamburger-icon" tabindex="-1">&#9776;</span>
