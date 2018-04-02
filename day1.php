@@ -329,7 +329,7 @@
                                 <img src="./images/css_commenting.png" alt="Example of CSS commenting">
                             </li>
                             <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.<br>
-                                <img src="./images/html-format.jpg" alt="Example folder structure"></li>
+                                <img src="./images/html-format.jpg" alt="Example html selector"></li>
                             <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your&nbsp;<strong>.html</strong>&nbsp;files as well.&nbsp;<br>
                                 <img src="./images/folder_structure.png" alt="Example folder structure"></li>
                             <li>Use the&nbsp;<strong>.html</strong>&nbsp;extension for all HTML files (not&nbsp;<strong>.htm</strong>). Use the typical extension for all other text based files.</li>
