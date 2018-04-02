@@ -8,6 +8,9 @@ if (!isset($pageName)) {
     <html lang="en">
 
     <head>
+        <!--
+       COMP1950 Final Project, created by JIN GANG LI (A01049534), and MU-JEN HSU(A00506830).
+    -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
