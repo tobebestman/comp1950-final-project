@@ -13,7 +13,26 @@ section {
 
 
 .code-p {
-    padding: 10px;
+    padding: 20px;
     background-color: rgba($site-blue, 0.1);
-    border: 1px dashed $site-black;
+    border: 10px dashed $site-black;
+}
+
+figure {
+    display: flex;
+    border: 1px dashed gray;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(83, 179, 203, 0.1);
+    padding: $quater-padding;
+    @include mq($phoneLandscape) {
+        padding: $quater-padding-mobile;
+    }
+}
+
+figcaption {
+    text-align: center;
+    margin-top: $quater-padding;
+    font-style: italic;
 }

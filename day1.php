@@ -84,7 +84,12 @@
                 <li>If you experience connectivity problems, re-check your input, or ask your instructor for assistance.</li>
             </ol>
 
-            <p><img border=0 id="Picture 10" src="./images/filezilla_screenshot.png" alt="Filezilla FTP login screenshot"></p>
+            <p>
+                <figure class="lesson-figure">
+                    <img border=0 id="Picture 10" src="./images/filezilla_screenshot.png" alt="Filezilla FTP login screenshot">
+                    <figcaption>Filezilla FTP login screenshot</figcaption>
+                </figure>
+            </p>
         </article>
         <article>
             <h2 id="Web-development-tools">Tools</h2>
@@ -319,13 +324,28 @@
             <ul>
                 <li>Comment&nbsp;<strong>all code</strong>&nbsp;with your name (or nickname if you prefer). Do this for all text based files (<strong>.html</strong>,&nbsp;<strong>.css</strong>,&nbsp;<strong>.js</strong>,&nbsp;<strong>.php</strong>, etc)
                     <br />
-                    <img src="./images/html-comments.jpg" alt="Example of HTML commenting"><br />
-                    <img src="./images/css_commenting.png" alt="Example of CSS commenting">
+                    <figure>
+                        <img src="./images/html-comments.jpg" alt="Example of HTML commenting">
+                        <figcaption>Example of HTML commenting</figcaption>
+                    </figure>
+                    <br />
+                    <figure>
+                        <img src="./images/css_commenting.png" alt="Example of CSS commenting">
+                        <figcaption>Example of CSS commenting</figcaption>
+                    </figure>
                 </li>
                 <li>In HTML, use carriage return and tabs to indicate parent-child tag relationships. Likewise, code your CSS to make it easy to see which rules are applied to each selector.<br>
-                    <img src="./images/html-format.jpg" alt="Example html selector"></li>
+                    <figure>
+                        <img src="./images/html-format.jpg" alt="Example html selector">
+                        <figcaption>Example html selector</figcaption>
+                    </figure>
+                </li>
                 <li>Separate different file types into folders. At minimum, keep all non-html files in their own folder. If you like you can make a dedicated 'html' folder for your&nbsp;<strong>.html</strong>&nbsp;files as well.&nbsp;<br>
-                    <img src="./images/folder_structure.png" alt="Example folder structure"></li>
+                    <figure>
+                        <img src="./images/folder_structure.png" alt="Example folder structure">
+                        <figcaption>Example folder structure</figcaption>
+                    </figure>
+                </li>
                 <li>Use the&nbsp;<strong>.html</strong>&nbsp;extension for all HTML files (not&nbsp;<strong>.htm</strong>). Use the typical extension for all other text based files.</li>
                 <li>Write structurally valid HTML code:&nbsp;<a href="http://validator.w3.org/">W3C HTML validator</a></li>
                 <li>Write syntactically valid CSS code:&nbsp;<a href="http://jigsaw.w3.org/css-validator/">W3C CSS

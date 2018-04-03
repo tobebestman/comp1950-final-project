@@ -39,8 +39,10 @@ $min-site-width: 320px;
 $space: 30;
 $padding: rem($space);
 $half-padding: rem(($space / 2));
+$quater-padding: rem(($space / 4));
 $padding-mobile: rem(($space - 10));
 $half-padding-mobile: rem((($space - 10) / 2));
+$quater-padding-mobile: rem(($half-padding-mobile) / 2);
 
 // Grid Values
 // Column Gutter value
