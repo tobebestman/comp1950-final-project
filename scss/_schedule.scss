@@ -68,7 +68,6 @@
 .box {
     position: relative;
     @include aspect-ratio-box('square');
-
     border: 3px solid black;
     font-size: minmax(calc(2vw + 8px), 60px);
     display: flex;

@@ -325,7 +325,7 @@
             <li><a href="https://caniuse.com/">caniuse.com</a> is an excellent source for compatibility testing</li>
             <li>Try the <a href="html5test.com/">HTML5Test</a> to test a specific browser.</li>
             <li>To ensure early versions of Internet Explorer will render HTML5 tags correctly, you can add the HTML5 shiv:</li>
-            <p class="code-p"><code>&lt;script&gt;document.createElement("article");&lt;/script&gt;</code></p>
+            <p class="code-p"><code>&lt;script&gt;<br />document.createElement("article");<br />&lt;/script&gt;</code></p>
             <li>This creates an element called &lt;article&gt; which the browser (IE, in this case) can understand and style appropriately</li>
             <li>Creating an entry for every element can get a bit heavy, so you can use the <a href="https://github.com/aFarkas/html5shiv">HTML5shiv </a>script written by <a href="remysharp.com/">Remy Sharp</a>. Insert a coded-comment that will apply the shiv ONLY with IE browsers earlier than version 9:</li>
             <p class="code-p">

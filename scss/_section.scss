@@ -14,8 +14,9 @@ section {
 
 .code-p {
     padding: $quater-padding;
+    margin: $quater-padding;
     background-color: rgba($site-blue, 0.1);
-    border: 2px dashed $site-black;
+
     @include mq($phoneLandscape) {
         padding: $quater-padding-mobile;
     }
@@ -23,7 +24,6 @@ section {
 
 figure {
     display: flex;
-    border: 2px dashed $site-black;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
