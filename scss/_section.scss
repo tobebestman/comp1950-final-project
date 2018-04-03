@@ -13,14 +13,17 @@ section {
 
 
 .code-p {
-    padding: 20px;
+    padding: $quater-padding;
     background-color: rgba($site-blue, 0.1);
-    border: 10px dashed $site-black;
+    border: 2px dashed $site-black;
+    @include mq($phoneLandscape) {
+        padding: $quater-padding-mobile;
+    }
 }
 
 figure {
     display: flex;
-    border: 1px dashed gray;
+    border: 2px dashed $site-black;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;

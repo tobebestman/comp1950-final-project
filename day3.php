@@ -44,10 +44,8 @@
                 media attribute allows you to specify what medium this should be viewed in.
             </li>
         </ul>
-        <p>
-            <code>
-                        &lt;link rel="stylesheet" href="http://www.mysite.com/css/styles.css" type="text/css" title="Main Style" media="screen" /&gt;
-                        </code>
+        <p class="code-p">
+            <code>&lt;link rel="stylesheet" href="http://www.mysite.com/css/styles.css" type="text/css" title="Main Style" media="screen" /&gt;</code>
         </p>
         <h3>Media variations:media attribute</h3>
         <p>
