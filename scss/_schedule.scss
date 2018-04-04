@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 200px)); //    grid-template-rows: repeat(3, minmax(auto, 200px));
     padding: $padding-mobile;
-    grid-gap: 5px;
+    grid-gap: 10px;
     justify-items: stretch;
     align-items: stretch;
     justify-content: center;
@@ -69,13 +69,12 @@
     position: relative;
     @include aspect-ratio-box('square');
     border: 3px solid black;
+    border-radius: 5px;
     font-size: minmax(calc(2vw + 8px), 60px);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4); //    #{$hover} {
-    //        background-color: rgba($site-yellow, 0.4);
-    //    }
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .schedule-p {

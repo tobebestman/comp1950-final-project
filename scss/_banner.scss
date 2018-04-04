@@ -12,7 +12,7 @@
         @include center(false, false);
         color: $text-light;
         text-align: center;
-        text-shadow: 2px 2px 0 $text-dark;
+        text-shadow: 2px 2px 2px $text-dark;
         white-space: nowrap;
         font-family: $body-font;
         font-weight: 600;
